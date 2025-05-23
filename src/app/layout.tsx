@@ -7,7 +7,6 @@ import { Providers } from './providers';
 import GlobalAlertBar from '@/components/GlobalAlertBar';
 import { UserCircleIcon, BellIcon, ArrowRightOnRectangleIcon } from '@heroicons/react/24/outline';
 import { getServerSession } from 'next-auth';
-import { authOptions } from '../pages/api/auth/[...nextauth]';
 import { redirect } from 'next/navigation';
 import { signOut, useSession } from 'next-auth/react';
 import SignOutButton from '@/components/SignOutButton';
@@ -24,11 +23,7 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  // Auth gating for all app pages except /signin
-  const session = await getServerSession(authOptions);
-  if (!session) {
-    redirect('/signin');
-  }
+  // Auth gating temporarily removed for development
 
   return (
     <html lang="en">
