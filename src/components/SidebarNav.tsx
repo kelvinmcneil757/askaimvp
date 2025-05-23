@@ -56,32 +56,8 @@ export default function SidebarNav() {
         <div className="uppercase text-xs text-[#BFAE9F] font-bold tracking-wider mb-1 px-2">Departments</div>
         <DepartmentSelector />
       </div>
-      {/* Favorites */}
-      <div className="mb-2">
-        <div className="uppercase text-xs text-[#BFAE9F] font-bold tracking-wider mb-1 px-2">Favorites</div>
-        <ul className="flex flex-col gap-1">
-          {favorites.map(fav => (
-            <li key={fav.name} className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#3E2C18] hover:bg-white cursor-pointer">
-              {fav.icon}
-              {fav.name}
-            </li>
-          ))}
-        </ul>
-      </div>
-      {/* Channels */}
-      <div className="mb-2">
-        <div className="uppercase text-xs text-[#BFAE9F] font-bold tracking-wider mb-1 px-2">My Channels</div>
-        <ul className="flex flex-col gap-1">
-          {channels.map(chan => (
-            <li key={chan.name} className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#3E2C18] hover:bg-white cursor-pointer">
-              {chan.icon}
-              {chan.name}
-            </li>
-          ))}
-        </ul>
-      </div>
-      {/* Main nav links */}
-      <div className="mt-4">
+      {/* Main nav links - moved up */}
+      <div className="mt-2">
         <ul className="flex flex-col gap-1">
           {navLinks.map(link => (
             <li key={link.href}>
