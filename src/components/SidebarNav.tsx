@@ -8,7 +8,6 @@ import { MagnifyingGlassIcon, SparklesIcon, StarIcon, FolderIcon, ChartBarIcon, 
 const navLinks = [
   { name: 'Ask AI', href: '/ask', icon: <SparklesIcon className="w-5 h-5 text-[#BFAE9F]" /> },
   { name: 'Tasks', href: '/tasks', icon: <ChartBarIcon className="w-5 h-5 text-[#BFAE9F]" /> },
-  { name: 'History', href: '/history', icon: <ClockIcon className="w-5 h-5 text-[#BFAE9F]" /> },
   { name: 'Admin', href: '/admin', icon: <Cog6ToothIcon className="w-5 h-5 text-[#BFAE9F]" /> },
   { name: 'Integrations', href: '/integrations', icon: <LinkIcon className="w-5 h-5 text-[#BFAE9F]" /> },
 ];
